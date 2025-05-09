@@ -1,11 +1,11 @@
-import { APP_NAME } from '@/lib/constant'
+import { APP_NAME } from '@/lib/constants'
 import Image from 'next/image'
 import Link from 'next/link'
-import Menu from './menu'
-import { Button } from '@/components/ui/button'
+import Menu from './Menu'
+import { Button } from '@/components/ui/Button'
 import { MenuIcon } from 'lucide-react'
 import data from '@/lib/data'
-import Search from './search'
+import Search from './Search'
 
 export default function Header() {
   return (
@@ -18,7 +18,7 @@ export default function Header() {
               className="flex items-center header-button font-extrabold text-2xl m-1 "
             >
               <Image
-                src="/icons/logo.png"
+                src="/icons/logo.svg"
                 width={40}
                 height={40}
                 alt={`${APP_NAME} logo`}
